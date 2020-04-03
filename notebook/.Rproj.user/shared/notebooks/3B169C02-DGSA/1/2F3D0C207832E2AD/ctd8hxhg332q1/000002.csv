@@ -1,0 +1,81 @@
+"0","plotParetoDGSA"
+"1","function (.dgsa, .clusters = FALSE, .interaction = NULL, .hypothesis = TRUE, 
+"
+"1","    .ggReturn = FALSE) 
+"
+"1","{
+"
+"1","    if (class(.dgsa) != ""DGSAstructure"") 
+"
+"1","        stop(""Passed object is not of class DGSAstructure. Exiting!"")
+"
+"1","    if (!is.null(.interaction)) {
+"
+"1","        .paramIndex <- which(.dgsa$parameters == .interaction)
+"
+"1","        if (length(.paramIndex) == 0) 
+"
+"1","            stop(""Parameter provided in \"".interaction\"" not found. Exiting!"")
+"
+"1","        .ggDATA <- t(.dgsa$sensitivityMatrix[, .paramIndex, ])
+"
+"1","        .plotTitle <- paste(""S(\""X\"" | "", .dgsa$parameters[.paramIndex], 
+"
+"1","            "")"", sep = """")
+"
+"1","    }
+"
+"1","    else {
+"
+"1","        .ggDATA <- apply(.dgsa$sensitivityMatrix, 1, diag)
+"
+"1","        .plotTitle <- ""Main Sensitivities (marginal)""
+"
+"1","    }
+"
+"1","    colnames(.ggDATA) <- paste(""Cluster"", 1:ncol(.ggDATA), sep = ""_"")
+"
+"1","    .ggDATA[is.nan(.ggDATA)] = 0
+"
+"1","    .ggDATA <- as.data.frame(.ggDATA)
+"
+"1","    .ggDATA$mean <- apply(.ggDATA, 1, mean)
+"
+"1","    .ggDATA$parameters <- .dgsa$parameters
+"
+"1","    .ggDATA <- .ggDATA[order(.ggDATA$mean), ]
+"
+"1","    .levels <- .ggDATA$parameters
+"
+"1","    .ggDATA <- melt(.ggDATA, id = c(""parameters""))
+"
+"1","    .ggDATA$parameters <- factor(.ggDATA$parameters, levels = .levels)
+"
+"1","    .ggP <- ggplot(.ggDATA, aes(x = parameters, y = value, fill = variable)) + 
+"
+"1","        coord_flip() + geom_bar(stat = ""identity"", position = ""dodge"", 
+"
+"1","        lwd = 0.2, colour = ""black"") + theme(legend.position = ""bottom"") + 
+"
+"1","        geom_hline(yintercept = ifelse(.hypothesis, 1, NULL)) + 
+"
+"1","        ggtitle(.plotTitle)
+"
+"1","    if (.ggReturn) {
+"
+"1","        return(.ggP)
+"
+"1","    }
+"
+"1","    else {
+"
+"1","        print(.ggP)
+"
+"1","    }
+"
+"1","}
+"
+"1","<bytecode: 0x7fce21712cc0>
+"
+"1","<environment: namespace:DGSA>
+"

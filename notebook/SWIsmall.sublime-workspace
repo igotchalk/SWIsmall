@@ -1,0 +1,490 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"exc",
+				"Exception\tclass"
+			],
+			[
+				"right_",
+				"bc_right_edge"
+			],
+			[
+				"chd",
+				"chdir\tfunction"
+			],
+			[
+				"wri",
+				"Write"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "load_run_AEM.py",
+			"settings":
+			{
+				"buffer_size": 8981,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "local_utils.py",
+			"settings":
+			{
+				"buffer_size": 6512,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "hausdorff_from_dir_PC.py",
+			"settings":
+			{
+				"buffer_size": 14056,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "run_MC.py",
+			"settings":
+			{
+				"buffer_size": 22686,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"conda ",
+				"Conda: Activate Environment"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"intsall p",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/run_MC_fromSherlock.py",
+		"/Users/ianpg/Downloads/waveforms/2019/waveform_312.gex.gex",
+		"/Users/ianpg/Library/Application Support/Mendeley Desktop/citationStyles-1.0/chicago-author-date_modified.csl",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/local_utils 2.py",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/load_data_make_mesh.py",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/toSherlock/notebook/run_MC.py",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/PassiveActiveSWI_200129_Merged.py",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/PassiveActiveSWI_200202_sherlock.py",
+		"/Users/ianpg/Downloads/load_data_make_mesh.py",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/make_varlist.py",
+		"/Users/ianpg/Library/Application Support/Sublime Text 3/Packages/Anaconda/Default (OSX).sublime-keymap",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/utils.py",
+		"/Users/ianpg/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/toSherlock/notebook/make_varlist.py",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/local_utils.py",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/simpegskytem/GlobalTDEM.py",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/testing.py",
+		"/Users/ianpg/anaconda/lib/python3.6/site-packages/flopy/seawat/swt.py",
+		"/Users/ianpg/Library/Application Support/Sublime Text 3/Packages/Sublime Input/Default (OSX).sublime-keymap",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/simulationFFT.py",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/SmallScaleSWI_200112.py",
+		"/Users/ianpg/Library/Application Support/Sublime Text 3/Packages/Python PEP8 Autoformat/pep8_autoformat.sublime-settings",
+		"/Users/ianpg/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/DelawareSGD-Unconfined-WT.py",
+		"/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/scipy/stats/__init__.py",
+		"/Users/ianpg/Library/Application Support/Sublime Text 3/Packages/Conda/Conda.sublime-settings",
+		"/Users/ianpg/Library/Application Support/Sublime Text 3/Packages/User/Conda.sublime-settings",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/SWI_fromPC/notebook/PassiveActiveSWI.py",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/DelawareSGD-Unconfined-WT_1222.py",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/SWI_fromPC/notebook/SmallScaleSWI_200112.py",
+		"/Users/ianpg/Documents/ProjectsLocal/kang-2019-3D-aem/kang-2019-3D-aem/codes/simpegskytem/GlobalTDEM.py",
+		"/Users/ianpg/Documents/ProjectsLocal/kang-2019-3D-aem/kang-2019-3D-aem/codes/simpegskytem/EMSimulation.py",
+		"/Users/ianpg/Documents/ProjectsLocal/SWIsmall/notebook/flopy_henry.py",
+		"/Users/ianpg/Downloads/Conversa Whatsapp Mòbil Robat 2016/_chat.txt",
+		"/Users/ianpg/Documents/ProjectsLocal/git/flopy/examples/Notebooks/data/lake_example.bas",
+		"/Users/ianpg/Documents/ProjectsLocal/git/flopy/examples/Notebooks/sgs_mod.py",
+		"/Users/ianpg/Documents/ProjectsLocal/git/flopy/examples/scripts/test.py",
+		"/Users/ianpg/Documents/ProjectsLocal/git/flopy/examples/scripts/flopy_henry.py",
+		"/Users/ianpg/Documents/ProjectsLocal/RP_bookchapter/simulationFFT.py",
+		"/Users/ianpg/Dropbox/Courses/GEOPHYS262/Homework3/data/aurora/ERT_data.eas",
+		"/Users/ianpg/Documents/ProjectsLocal/Marina_Borehole_Geophysics/notebooks/funcs.py",
+		"/Users/ianpg/cd",
+		"/Users/ianpg/Documents/ProjectsLocal/Marina_Borehole_Geophysics/work/figs/tree.dot",
+		"/Users/ianpg/Documents/ProjectsLocal/test_mfcompile/make_swtv4.py",
+		"/Users/ianpg/Documents/ProjectsLocal/Marina_Borehole_Geophysics/data/MontereyWells/mcwd : usgs deep well/las/DMW1_11-17-00_11-55_9080C_.10_5.90_1425.40_PROC.LAS",
+		"/Users/ianpg/Documents/ProjectsLocal/Marina_Borehole_Geophysics/notebooks/seogi_ian 2/waveforms.py",
+		"/Users/ianpg/Documents/ProjectsLocal/Marina_Borehole_Geophysics/data/las_MPWSP/ML-3f_all.las",
+		"/Users/ianpg/Documents/ProjectsLocal/Marina_Borehole_Geophysics/data/las_MPWSP/ML-3f.las",
+		"/Users/ianpg/Documents/ProjectsLocal/Marina_Borehole_Geophysics/data/las_all/20161012123105473f.las",
+		"/Users/ianpg/Documents/ProjectsLocal/Marina_Borehole_Geophysics/data/las_all/PR-1m.las",
+		"/Users/ianpg/Documents/ProjectsLocal/Marina_Borehole_Geophysics/data/Monterey Wells For Ian/mcwd : usgs deep well/las/Mcwd-dmw#1_05-27-00_00-44_9041a_.10_5.30_1874.50_proc.las",
+		"/Users/ianpg/Documents/ProjectsLocal/Marina_Borehole_Geophysics/data/Monterey Wells For Ian/mcwd : usgs deep well/las/Mcwd-dmw#1_05-27-00_07-18_9300a_.10_1.40_1872.10_proc.las",
+		"/Users/ianpg/Documents/ProjectsLocal/Marina_Borehole_Geophysics/data/las_MPWSP/MW-9Dm.las",
+		"/Users/ianpg/Documents/ProjectsLocal/Marina_Borehole_Geophysics/data/las_MPWSP/mw5_tmp_fres.las",
+		"/Users/ianpg/Dropbox/Courses/GEOPHYS262/Homework3/mGstat-master/visim/visim_src/gslib/Makefile",
+		"/Users/ianpg/Documents/ProjectsLocal/Marina_Borehole_Geophysics/data/las_MPWSP/MW-1D_all.las",
+		"/Users/ianpg/Documents/ProjectsLocal/Marina_Borehole_Geophysics/data/las_MPWSP/MW-1Df.las",
+		"/Users/ianpg/Dropbox/Courses/GEOPHYS262/work/aurora/aurora_dssim.par",
+		"/Users/ianpg/Documents/MATLAB/mGstat-master/visim/visim.m",
+		"/Users/ianpg/Dropbox/Courses/GEOPHYS262/work/aurora/debug_aurora_dssim.out",
+		"/Users/ianpg/Documents/MATLAB/mGstat-master/visim/visim_src/visim.inc",
+		"/Users/ianpg/Documents/MATLAB/mGstat-master/visim/visim_src/dotincs/visim_51_51_1_2000_199.inc",
+		"/Users/ianpg/Dropbox/Courses/GEOPHYS262/work/aurora/walker_dssim35.par",
+		"/Users/ianpg/Dropbox/Courses/GEOPHYS262/work/aurora/walker_dssim20.par",
+		"/Users/ianpg/Dropbox/Courses/GEOPHYS262/work/aurora/walker_dssim10.par",
+		"/Users/ianpg/Dropbox/Courses/GEOPHYS262/work/aurora/walker_dssim.par",
+		"/Users/ianpg/Documents/MATLAB/mGstat-0.995/examples/visim_examples/visim_sgsim_refmod.eas"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"CF",
+			"author",
+			"contributor",
+			"wel_cells",
+			"delr",
+			"run_simulation_skytem",
+			"n_pad_row",
+			"delr",
+			"nlay",
+			"create_survey",
+			"cmat",
+			"success",
+			".UCN",
+			".npy",
+			"tmp",
+			"copy_rename",
+			"get_base_hds_conc",
+			"f_basecase",
+			"get_base_hds_conc",
+			"swexe",
+			"wel_cells",
+			"farm_orig",
+			"influx",
+			"ocean_elev",
+			"ocean_hf",
+			"tot_it",
+			"add_pumping_wells",
+			"make_times",
+			"make_time",
+			"create_MC_file",
+			"create_MC_",
+			"save_obj",
+			"create_varlist",
+			"make_varlist",
+			"tot_it",
+			"rech_farm",
+			"farm",
+			"rech",
+			"rech_farm",
+			"get_yn_response",
+			"src_type",
+			"moment_type",
+			"run_simulation_skytem",
+			"plot",
+			"basic",
+			"basic_plot"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"farm_rech"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "load_run_AEM.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8981,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8932,
+								8932
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "local_utils.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6512,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								212,
+								212
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2047.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "hausdorff_from_dir_PC.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14056,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								64,
+								64
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "run_MC.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22686,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1150,
+								1153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 234.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "SWIsmall.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/ProjectsLocal/SWIsmall/notebook/SWIsmall.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 344.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,3 @@
+"0","write.csv(gg,file.path(datadir,sprintf(""matrixDGSA_%s_%s.csv"",test_var,section_name)))"
+"0","saveRDS(myDGSA, file = file.path(datadir,sprintf(""myDGSA%s_%s.rds"",test_var,section_name)))"
+"0",""

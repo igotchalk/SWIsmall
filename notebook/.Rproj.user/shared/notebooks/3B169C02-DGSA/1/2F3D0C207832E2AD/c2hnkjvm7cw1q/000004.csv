@@ -1,0 +1,42 @@
+"0","plotMatrixDGSA
+"
+"1","function (.dgsa, .hypothesis = TRUE, .method = ""circle"", ...) 
+"
+"1","{
+"
+"1","    if (class(.dgsa) != ""DGSAstructure"") 
+"
+"1","        stop(""Passed object is not of class DGSAstructure. Exiting!"")
+"
+"1","    .corrMat <- apply(.dgsa$sensitivityMatrix, c(2, 3), mean)
+"
+"1","    .corrMat[is.nan(.corrMat)] = 0
+"
+"1","    colnames(.corrMat) = rownames(.corrMat) <- .dgsa$parameters
+"
+"1","    if (.hypothesis) {
+"
+"1","        .significance <- 0.99 - apply(.dgsa$sensitivityMatrix, 
+"
+"1","            c(2, 3), min)
+"
+"1","        .significance[is.nan(.significance)] = 0
+"
+"1","    }
+"
+"1","    else {
+"
+"1","        .significance <- NULL
+"
+"1","    }
+"
+"1","    corrplot(.corrMat, method = .method, is.corr = FALSE, p.mat = .significance, 
+"
+"1","        sig.level = 0, ...)
+"
+"1","}
+"
+"1","<bytecode: 0x7fce213394e0>
+"
+"1","<environment: namespace:DGSA>
+"

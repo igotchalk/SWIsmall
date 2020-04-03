@@ -1,0 +1,167 @@
+---
+title: "DGSA: "
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+library(DGSA)
+
+
+
+```
+
+
+```{r}
+datadir <- '../work/heterog_1000/MC_expt_2020-02-01-18-15/export_1000'
+
+
+
+# section_name = '501_1000' #confined
+# section_name = '0_500' #unconfined
+# test_var = 'AEM'
+# test_var = 'conc'
+
+for (section_name in c('0_500','501_1000')){
+  for (test_var in c('conc','AEM')){
+    for (tim_ind in c(1,2,3,4)){
+      INPUT    <- read.csv(file.path(datadir,sprintf("ParametersValues_%s_%s_%d.csv",test_var,section_name,tim_ind)))
+      OUTPUT.D <- read.csv(file.path(datadir,sprintf("D_%s_%s_%d.csv",test_var,section_name,tim_ind)),header=FALSE)
+      clustering <-read.csv(file.path(datadir,sprintf("Cluster_%s_%s_%d.csv",test_var,section_name,tim_ind)),header=FALSE)$V1
+      
+      cat(sprintf('Testing on %s, iterations %s, time ind %d\n\n(key: 0-500=unconfined;501-1000=confined)\n ',test_var,section_name,tim_ind))
+      
+      
+      #Do DGSA
+      myDGSA <- dgsa(clustering, INPUT, .interactions = TRUE, .nBoot = 100, .nBins = 3, .alpha = 0.95, .parallel = TRUE)
+      
+      for (val in sequence(5)) {
+        corrMat <- myDGSA$sensitivityMatrix[val,,]
+        corrMat[is.nan(corrMat)] = 0
+        colnames(corrMat) = rownames(corrMat) <- myDGSA$parameters
+        write.csv(corrMat,file.path(datadir,sprintf("matrixDGSA_%s_%s_%d_%d.csv",test_var,section_name,val,tim_ind)))
+      }
+      
+      gg = plotMatrixDGSA(myDGSA, .hypothesis = FALSE , .method = "circle")
+      write.csv(gg,file.path(datadir,sprintf("matrixDGSA_%s_%s_%d.csv",test_var,section_name,tim_ind)))
+      saveRDS(myDGSA, file = file.path(datadir,sprintf("myDGSA%s_%s_%d.rds",test_var,section_name,tim_ind)))
+    }
+  }
+}
+```
+
+
+```{r}
+
+gg = plotMatrixDGSA(myDGSA, .hypothesis = FALSE , tl.srt = 45,.method = "number")
+```
+
+```{r}
+
+
+```
+
+```{r}
+plotCDFS(clustering, INPUT, .code = "all*")
+```
+
+What are the nBins? Why can I plot more than the number of clusters?
+-->They look like bins of the conditional variable (e.g. CF_glob in "hk_var|CF_glob"). The binned values should say, if we take each of the clustered CDFs for "hk_var", then color-code them according to the value of CF_glob, does it make a difference?
+```{r}
+
+plotCDFS(clustering, INPUT, .code = "CF_.spatial.")
+
+
+```
+
+
+```{r}
+plotCDFS(clustering, INPUT, .code = "CF_.spatial.|CF_.glob.", .nBins = 2)
+
+```
+
+
+```{r}
+plotCDFS(clustering, INPUT, .code = "CF_.glob.|CF_.spatial.", .nBins = 5)
+
+```
+
+
+
+
+
+
+```{r}
+
+
+```
+
+
+
+```{r}
+
+test = readRDS(file.path(datadir,sprintf("myDGSA%s_%s.rds",test_var,section_name)))
+```
+
+
+```{r}
+
+
+```
+
+
+```{r}
+png(file.path(datadir,sprintf("DGSA_%s_%s.png",test_var,section_name)), width = 14.7, height = 18.8, units = "cm", res = 300, pointsize = 12)
+print(plotMatrixDGSA(myDGSA, .hypothesis = FALSE , .method = "circle"))
+dev.off()
+```
+
+
+```{r}
+plotMatrixDGSA
+
+
+```
+
+
+
+
+
+```{r}
+test[5, ]
+```
+
+
+
+
+
+
+
+```{r}
+
+
+test
+```
+
+
+```{r}
+plotParetoDGSA(myDGSA,.interaction = "m",.hypothesis=TRUE)
+
+```
+
+
+```{r}
+plotParetoDGSA
+```
+
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
